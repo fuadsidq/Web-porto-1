@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+body {
+    font-family: sans-serif;
+    color: #fff;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 10%;
+    background-color: rgba(1, 1, 1, 0.6);
+    border-bottom: 0.5px solid #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.navbar a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0 5rem;
+}
+.navbar a:hover {
+    color: hsl(105, 72%, 18%);
+}
+/* navbar end */
+
+.home, .profile {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(assets/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content, .profile .content, .galery .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.home .content h1 {
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.6);
+}
+
+.profile .content h2 {
+    font-size: 4.7em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.6);
+}
+
+.profile .content p {
+    margin: 1rem 16%;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.6);
+}
+
+.profile .profile-img img {
+  display: flex;
+  float: left;
+  margin-right: 7rem;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px rgba(39, 38, 38, 0.5);
+}
+
+.galery, .contact {
+    min-height: 100vh;
+    background-image: url(assets/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 7% 1.4rem;
+}
+
+.galery h2, .contact h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 2.6rem;
+}
+.galery .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.galery-card, .contact-card {
+    text-align: center;
+    padding: 2rem;
+}
+.galery-card-title, .contact-card-title {
+    margin: 1.5rem auto 0.5rem;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 0.4rem;
+}
+
+.contact h2 span {
+    color: hsl(105, 72%, 18%);
+}
+  
+.contact form {
+    padding: 3rem 5rem;
+    text-align: center;
+}
+  
+.contact form .input-grub {
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+    background-color: rgba(1, 1, 1, 0.26);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+.contact form .input-grub input {
+    padding: 0.7rem;
+    font-size: 1.6rem;
+    background: none;
+    color: #fff;
+}
+  
+.contact form .btn {
+    margin-top: 2.3rem;
+    margin-bottom: 0;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: white;
+    background: rgba(1, 1, 1, 0.26);
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+  
